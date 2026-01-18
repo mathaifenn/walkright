@@ -1,3 +1,12 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+
+# Environment files
 .env.local
-.next
+
+# Backup files
+*.bak
+
