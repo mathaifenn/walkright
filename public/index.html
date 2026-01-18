@@ -1,85 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reflection</title>
-  <meta name="description" content="A private reflection space following a leadership talk on AI, organizations, and human judgment." />
+  <title>Think Tank — NSE Mumbai | Mathai Fenn</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      color: #111;
-      background: #fff;
-      line-height: 1.6;
+    /* --------------------
+       Global Reset & Safety
+       -------------------- */
+    * {
+      box-sizing: border-box;
     }
 
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
 
-    /* Banner */
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: #222;
+      background: #fff;
+    }
+
+    /* --------------------
+       Banner
+       -------------------- */
     .banner {
       width: 100%;
       height: 55vh;
       min-height: 320px;
-      max-height: 640px;
       overflow: hidden;
-      background-color: #000;
     }
 
     .banner img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
       display: block;
     }
 
-    /* Content */
+    /* --------------------
+       Content Wrapper
+       -------------------- */
     .content {
-      max-width: 960px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 2rem 1.5rem 3rem;
+      padding: 3rem 1.5rem 4rem;
     }
 
     h1 {
-      font-size: 1.4rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: normal;
+      color: #555;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
     }
 
     p {
-      margin: 0.75rem 0;
+      margin: 1rem 0;
     }
 
-    .quiet {
-      color: #444;
+    ul {
+      margin: 1rem 0 1.5rem 1.2rem;
     }
 
-    .link-block {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #e0e0e0;
+    li {
+      margin-bottom: 0.5rem;
     }
 
-    a {
-      color: #111;
-      text-decoration: underline;
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2.5rem 0;
     }
 
- 
- /* Mobile refinement */
+    .meta {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .closing {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* --------------------
+       Mobile (QR-First)
+       -------------------- */
     @media (max-width: 600px) {
       body {
-        font-size: 16px;
+        font-size: 19px;           /* ~75–90% increase */
+        line-height: 1.75;
       }
-      
+
       .banner {
-        height: 40vh;
-        min-height: 260px;
+        height: 35vh;
+        min-height: 220px;         /* prevents overflow */
       }
-      
+
+      .content {
+        padding: 2.5rem 1.25rem 3rem;
+      }
+
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
       }
     }
   </style>
@@ -87,74 +131,67 @@
 
 <body>
 
-  <!-- Banner -->
+  <!-- Optional banner image -->
   <div class="banner">
-    <img src="/Talkshop Academy Heading.png" alt="Reflection banner" />
+    <!-- Replace src when ready; safe to remove entirely if needed -->
+    <img src="banner.jpg" alt="Think Tank session at NSE Mumbai">
   </div>
 
-  <!-- Content -->
-  <div class="content">
+  <main class="content">
 
-    <em>A private reflection space:</em>
+    <h1>Think Tank</h1>
+    <h2>by Nabomita</h2>
 
-    <p class="quiet">
-    This page is a private reflection space following a leadership talk on AI, organizations, and human judgment. It is designed to help you process the ideas presented and consider how they apply to your own context. Nothing here is tracked, stored, or shared.
-      This is not a tool or an assessment.
+    <p class="meta">
+      <strong>Venue:</strong> NSE, Mumbai<br />
+      <strong>Date:</strong> 20 January
     </p>
 
-    <p>
-      <strong>Abstract:</strong><br/></p>
-        <p><h1>Why Most AI Investments Fail to Deliver ROI</h1><br/></p>
-      <p><em> The problem isn’t technology—it’s organizational clarity.</em><p</p>
-      
+    <hr />
 
     <p>
-For a brief period in the early 1990s, many organizations believed that their most critical strategic resource was the relationship with the customer. This belief shaped how companies communicated, designed experiences, and imagined value—often striving not just for satisfaction, but for delight. Over time, that relationship was gradually pushed outward: first outsourced to call centres, then constrained by scripts, compliance, and fear of litigation, and eventually replaced altogether by human-like AI agents. What remained was efficiency without ownership, interaction without relationship, and execution without meaning.
-
-This talk reframes the current AI conversation by arguing that the widespread failure of AI investments to deliver ROI cannot be understood in technical terms alone. Long before AI arrived, organizations had already weakened their human core—reducing judgment, agency, and relationship-building in the pursuit of scale and cost optimization. AI now accelerates this trajectory by absorbing execution at unprecedented speed. The strategic question is no longer whether AI works, but what organizations choose to do with the human capacity it frees.
-
-<p><em>
-“AI will not determine the future value of your organization.  
-It will only reveal what you chose to protect—and what you chose to give away.”
-</em></p>  
-
-<p><strong>About the Author</strong></p>
-<p>
-
-Dr. Mathai Fenn is a cognitive psychologist and educator with a PhD from the Indian Institute of Technology Bombay. He has spent much of his working life helping people think clearly when situations feel confusing, pressured, or uncertain. He has worked with individuals, families, and organizations across education, healthcare, and leadership contexts, often at moments when the cost of confusion is high and there are no easy answers.
-
-Today, his work focuses on helping people and institutions prepare for a non-linear future that is already here—one in which familiar assumptions no longer hold and decisions carry deeper consequences. He helps people slow things down, see the full picture, and regain clarity before making important choices. He does not give quick-fix advice. Instead, he helps people understand what is really going on so they can decide responsibly for themselves.
-
-He uses AI quietly as a support tool to reduce confusion and hold context, while keeping judgment, responsibility, and human connection firmly in human hands.
-
-He can be contacted at mathai< at >fenn.net
-
-or on WhatsApp / mobile at +91 99800 51414.
-
-</p>
-
-
-
-    <p>
-Now let’s reflect on what this means for you and your organization. Given below is a prompt to guide your thinking. It is only a text file that opens when you click the link below. All you have to do is to open it, copy and paste it to your favourite AI chat, whether it is Chatgpt, Claude, Gemini or anything else. You can do this on your phone or on a computer. Then you talk to it like you would do in a whatsapp conversation. The aims is to help you reflect on the talk and to give you a hands-on experience of how AI can help you think through complex issues.
+      This page is a companion to the conversation you are part of today.
+      It is not a summary of slides, but a reflective handout —
+      something you can return to after the session.
     </p>
 
-    <div class="link-block">
-      <p>
-        <strong>To continue:</strong>
-      </p>
-      Copy the prompt below into your favourite AI chat tool:
-      <p>
-        <a href="/reflection.txt">
-          Go to the reflection prompt txt
-        </a>
-      </p>
-      <p class="quiet">
-        (You can do this now on your phone, or later on a computer.)
-      </p>
-    </div>
+    <h3>What this conversation is about</h3>
 
+    <ul>
+      <li>How thinking itself has changed, while institutions often haven’t.</li>
+      <li>The difference between information, insight, and judgment.</li>
+      <li>Why speed and intelligence are not the same thing.</li>
+      <li>What it means to design spaces that genuinely support thinking.</li>
+    </ul>
 
+    <h3>A central question</h3>
+
+    <p>
+      <em>
+        In a world where answers are cheap, how do we learn to ask better
+        questions — and recognize when a real insight has occurred?
+      </em>
+    </p>
+
+    <h3>Continuing the conversation</h3>
+
+    <p>
+      This page may evolve after the event with reflections, notes,
+      and related material.
+    </p>
+
+    <p class="closing">
+      You may wish to bookmark or save this page and return to it later.
+    </p>
+
+    <hr />
+
+    <p class="closing">
+      Mathai Fenn<br />
+      Cognitive Psychologist & Educator
+    </p>
+
+  </main>
 
 </body>
 </html>
