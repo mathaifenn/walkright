@@ -1,129 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Think Tank — NSE Mumbai | Mathai Fenn</title>
+  <title>Reflection</title>
+  <meta name="description" content="A private reflection space following a leadership talk on AI, organizations, and human judgment." />
 
   <style>
-    /* --------------------
-       Global Reset & Safety
-       -------------------- */
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      -webkit-text-size-adjust: 100%;
-    }
-
     body {
       margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.65;
-      color: #222;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #111;
       background: #fff;
+      line-height: 1.6;
     }
 
-    /* --------------------
-       Banner
-       -------------------- */
+    /* Banner */
     .banner {
       width: 100%;
       height: 55vh;
       min-height: 320px;
+      max-height: 640px;
       overflow: hidden;
+      background-color: #000;
     }
 
     .banner img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       display: block;
     }
 
-    /* --------------------
-       Content Wrapper
-       -------------------- */
+    /* Content */
     .content {
-      max-width: 720px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 3rem 1.5rem 4rem;
+      padding: 2rem 1.5rem 3rem;
     }
 
     h1 {
-      font-size: 2.2rem;
-      line-height: 1.2;
+      font-size: 1.4rem;
+      font-weight: 600;
       margin-bottom: 0.5rem;
     }
 
-    h2 {
-      font-size: 1.3rem;
-      font-weight: normal;
-      color: #555;
-      margin-top: 0;
-      margin-bottom: 2rem;
-    }
-
-    h3 {
-      font-size: 1.25rem;
-      margin-top: 2.5rem;
-      margin-bottom: 0.75rem;
+    .subtitle {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
     }
 
     p {
-      margin: 1rem 0;
+      margin: 0.75rem 0;
     }
 
-    ul {
-      margin: 1rem 0 1.5rem 1.2rem;
+    .quiet {
+      color: #444;
     }
 
-    li {
-      margin-bottom: 0.5rem;
+    .section-break {
+      margin: 2.5rem 0 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e0e0e0;
     }
 
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 2.5rem 0;
+    .link-block {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
     }
 
-    .meta {
-      font-size: 0.95em;
-      color: #555;
+    .link-block a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      font-weight: 500;
     }
 
-    .closing {
-      font-size: 0.9em;
-      color: #666;
+    .link-block a:hover {
+      background-color: #333;
     }
 
-    /* --------------------
-       Mobile (QR-First)
-       -------------------- */
+    a {
+      color: #111;
+      text-decoration: underline;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding-left: 1.5rem;
+      border-left: 3px solid #ddd;
+      font-style: italic;
+    }
+
+    .bio {
+      background-color: #fafafa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+
+    /* Mobile refinement */
     @media (max-width: 600px) {
       body {
-        font-size: 19px;           /* ~75–90% increase */
-        line-height: 1.75;
+        font-size: 16px;
       }
-
+      
       .banner {
-        height: 35vh;
-        min-height: 220px;         /* prevents overflow */
+        height: 40vh;
+        min-height: 260px;
+      }
+      
+      h1 {
+        font-size: 1.5rem;
       }
 
       .content {
-        padding: 2.5rem 1.25rem 3rem;
+        padding: 1.5rem 1rem 2rem;
       }
 
-      h1 {
-        font-size: 1.9rem;
+      .link-block {
+        padding: 1.25rem;
       }
 
-      h2 {
-        font-size: 1.1rem;
+      .link-block a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .bio {
+        padding: 1.25rem;
       }
     }
   </style>
@@ -131,67 +151,83 @@
 
 <body>
 
-  <!-- Optional banner image -->
+  <!-- Banner -->
   <div class="banner">
-    <!-- Replace src when ready; safe to remove entirely if needed -->
-    <img src="banner.jpg" alt="Think Tank session at NSE Mumbai">
+    <img src="/tsacademy.png" alt="Reflection banner" />
   </div>
 
-  <main class="content">
+  <!-- Content -->
+  <div class="content">
 
-    <h1>Think Tank</h1>
-    <h2>by Nabomita</h2>
+    <p><em>A private reflection space</em></p>
 
-    <p class="meta">
-      <strong>Venue:</strong> NSE, Mumbai<br />
-      <strong>Date:</strong> 20 January
+    <p class="quiet">
+      This page is a private reflection space following a leadership talk on AI, organizations, and human judgment. It is designed to help you process the ideas presented and consider how they apply to your own context. Nothing here is tracked, stored, or shared. This is not a tool or an assessment.
     </p>
 
-    <hr />
+    <h1>Why Most AI Investments Fail to Deliver ROI</h1>
+    
+    <p class="subtitle"><em>The problem isn't technology - it's organizational clarity.</em></p>
 
     <p>
-      This page is a companion to the conversation you are part of today.
-      It is not a summary of slides, but a reflective handout —
-      something you can return to after the session.
+      For a brief period in the early 1990s, many organizations believed that their most critical strategic resource was the relationship with the customer. This belief shaped how companies communicated, designed experiences, and imagined value - often striving not just for satisfaction, but for delight. Over time, that relationship was gradually pushed outward: first outsourced to call centres, then constrained by scripts, compliance, and fear of litigation, and eventually replaced altogether by human-like AI agents. What remained was efficiency without ownership, interaction without relationship, and execution without meaning.
     </p>
-
-    <h3>What this conversation is about</h3>
-
-    <ul>
-      <li>How thinking itself has changed, while institutions often haven’t.</li>
-      <li>The difference between information, insight, and judgment.</li>
-      <li>Why speed and intelligence are not the same thing.</li>
-      <li>What it means to design spaces that genuinely support thinking.</li>
-    </ul>
-
-    <h3>A central question</h3>
 
     <p>
-      <em>
-        In a world where answers are cheap, how do we learn to ask better
-        questions — and recognize when a real insight has occurred?
-      </em>
+      This talk reframes the current AI conversation by arguing that the widespread failure of AI investments to deliver ROI cannot be understood in technical terms alone. Long before AI arrived, organizations had already weakened their human core - reducing judgment, agency, and relationship-building in the pursuit of scale and cost optimization. AI now accelerates this trajectory by absorbing execution at unprecedented speed. The strategic question is no longer whether AI works, but what organizations choose to do with the human capacity it frees.
     </p>
 
-    <h3>Continuing the conversation</h3>
+    <blockquote>
+      "AI will not determine the future value of your organization.<br/>
+      It will only reveal what you chose to protect - and what you chose to give away."
+    </blockquote>
 
-    <p>
-      This page may evolve after the event with reflections, notes,
-      and related material.
-    </p>
+    <div class="bio">
+      <p><strong>About the Author</strong></p>
+      
+      <p>
+        Dr. Mathai Fenn is a cognitive psychologist and educator with a PhD from the Indian Institute of Technology Bombay. He has spent much of his working life helping people think clearly when situations feel confusing, pressured, or uncertain. He has worked with individuals, families, and organizations across education, healthcare, and leadership contexts, often at moments when the cost of confusion is high and there are no easy answers.
+      </p>
 
-    <p class="closing">
-      You may wish to bookmark or save this page and return to it later.
-    </p>
+      <p>
+        Today, his work focuses on helping people and institutions prepare for a non-linear future that is already here - one in which familiar assumptions no longer hold and decisions carry deeper consequences. He helps people slow things down, see the full picture, and regain clarity before making important choices. He does not give quick-fix advice. Instead, he helps people understand what is really going on so they can decide responsibly for themselves.
+      </p>
 
-    <hr />
+      <p>
+        He uses AI quietly as a support tool to reduce confusion and hold context, while keeping judgment, responsibility, and human connection firmly in human hands.
+      </p>
 
-    <p class="closing">
-      Mathai Fenn<br />
-      Cognitive Psychologist & Educator
-    </p>
+      <p class="contact">
+        <strong>Contact:</strong><br/>
+        Email: mathai@fenn.net<br/>
+        WhatsApp / Mobile: +91 99800 51414
+      </p>
+    </div>
 
-  </main>
+    <div class="section-break">
+      <p><strong>What does this mean for your organization?</strong></p>
+
+      <p>
+        Below is a reflection prompt - a simple text file you can use with any AI assistant (ChatGPT, Claude, Gemini, or others). Copy it, paste it into a conversation, and explore these questions in your own context. Think of it as a guided conversation to help you process what you've heard.
+      </p>
+    </div>
+
+    <div class="link-block">
+      <p>
+        <strong>To continue:</strong>
+      </p>
+      <p>
+        Copy the prompt below into your favourite AI chat tool:
+      </p>
+      <a href="/reflection.txt">
+        Get the reflection prompt
+      </a>
+      <p class="quiet" style="margin-top: 1rem;">
+        (You can do this now on your phone, or later on a computer.)
+      </p>
+    </div>
+
+  </div>
 
 </body>
 </html>
